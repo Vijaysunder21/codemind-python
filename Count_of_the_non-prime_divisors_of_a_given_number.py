@@ -8,14 +8,13 @@ def prime(n):
     else:
         return 0
 n=int(input())
-k=0
-l=0
+c1=0
+c2=0
 for i in range(1,n+1):
     if(n%i==0):
-        k=k+1
+        c1=c1+1
+    if(n%i==0):
         if(prime(i)):
-            l=l+1
-print(k-l)            
-        
-        
+            c2=c2+1
+print(abs(c1-c2))            
         
