@@ -1,11 +1,8 @@
 n=int(input())
-a=list(str(n))
-for i in range(0,len(a)):
-    if(a[i]=='6'):
-        a[i]='9'
+k=list(str(n))
+for i in range(len(k)):
+    if(k[i]=="6"):
+        k[i]="9"
         break
-    else:
-        continue
-n="".join(a)
-print(n)
-    
+for i in range(len(k)):
+    print(k[i],end="")
