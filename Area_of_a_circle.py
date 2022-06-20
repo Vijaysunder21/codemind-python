@@ -1,5 +1,3 @@
 r=int(input())
-p=3.14
-ar=p*r*r
-form="{:.2f}".format(ar)
-print(form)
+a=3.14*r*r
+print(round(a,2))
