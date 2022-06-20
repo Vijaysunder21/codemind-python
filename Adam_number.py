@@ -1,0 +1,21 @@
+n=int(input())
+k=n*n
+temp=n
+rev=0
+revk=0
+while(n):
+    d=n%10
+    rev=rev*10+d
+    n=n//10
+l=rev*rev
+while(k):
+    d1=k%10
+    revk=revk*10+d1
+    k=k//10
+if(temp%10):
+    if(revk==l):
+        print("True")
+    else:
+        print("False")
+else:
+    print("False")
