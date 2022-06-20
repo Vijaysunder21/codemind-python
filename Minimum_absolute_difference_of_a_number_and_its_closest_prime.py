@@ -26,8 +26,3 @@ elif(abs(k-n)==abs(m-n)):
     print(abs(k-n))
 else:
     print(abs(n-k))
-        
-        
-        
-            
-    
