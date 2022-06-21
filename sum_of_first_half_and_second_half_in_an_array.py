@@ -1,5 +1,5 @@
 n=int(input())
-arr=list(map(int,input().split()))
+arr=list(map(int,input().strip().split()))
 s1=0
 s2=0
 for i in range(0,len(arr)//2):
