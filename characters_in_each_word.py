@@ -1,4 +1,3 @@
-s=input()
-c=0
-for i in s.split():
+s=input().split()
+for i in s:
     print(len(i),end=" ")
