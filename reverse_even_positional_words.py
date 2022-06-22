@@ -1,6 +1,6 @@
-s=input()
-a=list(s.split())
-for i in range(len(a)):
-    if i%2==0:
-        a[i]=a[i][::-1]
-print(*a)    
+s=input().split()
+for i in s:
+    if(s.index(i)%2==0):
+        print(i[::-1],end=" ")
+    else:
+        print(i,end=" ")
