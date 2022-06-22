@@ -1,8 +1,9 @@
 s=input()
-alpha="abcdefghijklmnopqrstuvwxyz"
-for i in alpha:
-    if i not in s.lower():
-        print("False")
-        break
-else:
+v=list("abcdefghijklmnopqrstuvwxyz")
+for i in s.lower():
+    if i in v:
+        v.remove(i)
+if(len(v)==0):
     print("True")
+else:
+    print("False")
