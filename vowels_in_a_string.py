@@ -9,3 +9,4 @@ for i in s:
         break
 if(f==0):
     print("False")
+    
