@@ -1,8 +1,6 @@
-a=input()
-b=input()
-a=a.lower()
-b=b.lower()
-if(sorted(a)==sorted(b)):
-    print('True')
+s1=input().lower()
+s2=input().lower()
+if(sorted(s1)==sorted(s2)):
+    print("True")
 else:
-    print('False')
+    print("False")
