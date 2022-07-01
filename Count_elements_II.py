@@ -1,19 +1,15 @@
-n,m=map(int,input().split())
-a=list(map(int,input().split()))
-b=list(map(int,input().split()))
+a,b=map(int,input().split())
+arr=list(map(int,input().split()))
+brr=list(map(int,input().split()))
 c=[]
 d=[]
-l=0
-for i in a:
-    if i not in c:
+for i in arr:
+    if i not in brr:
         c.append(i)
-for i in b:
-    if i not in d:
+for i in brr:
+    if i not in arr:
         d.append(i)
-for i in c:
-    if i not in d:
-        l=l+1
-for i in d:
-    if i not in c:
-        l=l+1
-print(l)        
+e=[]
+print(len(set(c+d)))
+        
+            
