@@ -3,8 +3,11 @@ arr=list(map(int,input().split()))
 if(n<3):
     print("no")
 else:
-    for i in range(2,len(arr)):
-        if(arr[i]!=arr[i-1]+arr[i-2]):
-            print("no")
-            quit()
-    print("yes")
+    f=1
+    for i in range(0,len(arr)-2):
+        if(arr[i]+arr[i+1]!=arr[i+2]):
+            f=0
+    if(f==1):
+        print("yes")
+    else:
+        print("no")
